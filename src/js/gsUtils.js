@@ -784,9 +784,9 @@ var gsUtils = {
       var curWindow = session.windows[i];
       for (var j = curWindow.tabs.length - 1; j >= 0; j--) {
         var curTab = curWindow.tabs[j];
-        if (gsUtils.isInternalTab(curTab)) {
-          curWindow.tabs.splice(j, 1);
-        }
+        // if (gsUtils.isInternalTab(curTab)) {
+        //   curWindow.tabs.splice(j, 1);
+        // }
       }
       if (curWindow.tabs.length === 0) {
         session.windows.splice(i, 1);
